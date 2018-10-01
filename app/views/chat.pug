@@ -1,0 +1,26 @@
+//- doctype html
+//- html
+//-   head
+     
+//-     title= title
+//-     link(rel='stylesheet', href='/stylesheets/style.css')
+//-     script(defer src='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+//-     script(src='http://localhost:4201/livereload.js')
+//-     script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js")
+//-     script(src="/socket.io/socket.io.js")
+//-     block styles
+//-     block scripts
+//-   body
+extends layout
+
+block content
+  div#message
+    ul#messages
+    form(action="")
+  container
+    form
+      input#mensaje(autocomplete="off")
+      button#btn Send 
+  container
+    div#writing-message(style="display:none") Someone is writing...
+  script(src="/javascripts/main.js")

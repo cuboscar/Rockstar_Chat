@@ -1,0 +1,14 @@
+
+div#header
+    h1= appTitle
+    ul.menu 
+        a(class='button' href="/") Home <br>
+        a(class='button' href="/profile") Profile <br>
+        if user
+            a(class='button' href="/logout") Logout <br>
+            li Chatting as:
+                a(class='button' href="/chat" id="nombre") #{user.displayName} <br>
+        else 
+            a(class='button' href="/login") Login<br>
+            li Chatting as:
+                a(class='button' href="/chat" id="nombre") Anonymous<br>

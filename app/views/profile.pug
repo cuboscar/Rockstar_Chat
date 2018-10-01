@@ -1,0 +1,11 @@
+extends layout
+block content
+  //- p Hello  #{name}
+  div#profile.container.full-width
+    h1 Profile 
+    img(src="/images/1.jpg", alt="Perro")
+    
+    h3.text-center=user.displayName
+    pre=JSON.stringify(user)
+  
+    
